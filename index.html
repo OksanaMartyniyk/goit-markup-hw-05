@@ -58,7 +58,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="button-basic" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -465,7 +467,61 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p class="social-media-text">Subscribe</p>
+          <label for="email"></label>
+          <input
+            class="email-field"
+            id="email"
+            type="email"
+            name="user-email"
+            placeholder="E-mail"
+          />
+          <button class="button-subscribe" type="submit">Subscribe</button>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-open" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>X</button>
+        <p class="call-back">Leave your contacts and we will call you back</p>
+        <form name="contacts-form">
+          <div>
+            <label for="user-name">Name</label>
+            <input id="user-name" type="text" name="user-name" />
+          </div>
+
+          <div>
+            <label for="user-tel">Phone</label>
+            <input id="user-tel" type="tel" name="user-tel" />
+          </div>
+
+          <div>
+            <label for="user-email">Email</label>
+            <input id="user-email" type="email" name="user-email" />
+          </div>
+
+          <div>
+            <label for="user-comment">Comment</label>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div>
+            <input id="privacy-policy" type="checkbox" />
+            <label for="privacy-policy">
+              I accept the terms and conditions of the Privacy Policy
+            </label>
+          </div>
+
+          <button class="button-basic" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
