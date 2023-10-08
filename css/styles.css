@@ -422,7 +422,7 @@ address {
     padding: 100px 0;
 }
 
-.help-container{
+.help-container {
     display: flex;
     align-items: baseline;
     justify-content: start;
@@ -433,7 +433,7 @@ address {
 }
 
 .box-socials {
-    margin-right: 120px;
+    margin-right: 80px;
 }
 
 .logo-in-footer{
@@ -451,7 +451,10 @@ address {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+
 .social-media-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     font-weight: 500;
     color: var(--color-hero-section);
     margin-bottom: 16px;
@@ -469,33 +472,43 @@ address {
     background-color: var(--color-hover-icons);
 }
 
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
 .email-field {
     font-size: 12px;
     line-height: 1.5;
-    letter-spacing: 0.03;
+    letter-spacing: 0.04;
+    width: 264px;
+    height: 40px;
     color: var(--color-hero-section);
-    background-color: var(--color-primary);
+    background-color: transparent;;
     border-radius: 4px;
     border: 1px solid var(--color-hero-section);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 264px;
-    margin-right: 24px;
+}
+
+.email-field::placeholder {
+    color: var(--color-hero-section);
 }
 
 .button-subscribe {
+    min-width: 165px;
+    height: 40px;
     border: none;
     cursor: pointer;
-    font-family: inherit;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     color: var(--color-hero-section);
     background-color: var(--color-accent);
     border-radius: 4px;
-    display: inline-flex;
+    display: flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
@@ -503,10 +516,15 @@ address {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    .button-subscribe:hover,
-    .button-subscribe:focus {
+.button-subscribe:hover,
+.button-subscribe:focus {
         background-color: var(--color-hover);
     }
+
+.button-subscribe-icon {
+    fill: var(--color-hero-section);
+    margin-left: 16px;
+}
 
 /* Modal */
 
@@ -526,12 +544,12 @@ address {
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* 
 .is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
+} */
 
 .modal {
     position: relative;
