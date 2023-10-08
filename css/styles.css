@@ -692,6 +692,7 @@ address {
 }
 
 .modal-checkbox-check { 
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-right: 8px;
@@ -710,12 +711,14 @@ address {
     opacity: 0;
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
+
+
+/* .modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
     background-color: var(--color-hover);
     opacity: 1;
     border: none;
     fill: var(--color-footer);
-}
+} */
 
 .modal-checkbox-label {
     color: var(--color-advantage-icons);
