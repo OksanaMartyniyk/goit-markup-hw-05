@@ -530,8 +530,6 @@ address {
 
 .backdrop {
     position: fixed;
-    max-width: 1440px;
-    max-height: 676px;
     width: 100%;
     height: 100%;
     top: 0;
@@ -704,14 +702,12 @@ address {
     opacity: 0;
 }
 
-
-
-/* .modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check {
     background-color: var(--color-hover);
     opacity: 1;
     border: none;
     fill: var(--color-footer);
-} */
+}
 
 .modal-checkbox-label {
     color: var(--color-advantage-icons);
