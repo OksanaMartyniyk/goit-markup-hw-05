@@ -638,9 +638,6 @@ address {
 
 .modal-input:focus + .modal-input-icons {
     fill: var(--color-accent);
-}
-
-.modal-input-name {
     border-color: var(--color-accent);
 }
 
