@@ -636,7 +636,6 @@ address {
 
 .modal-input:focus + .modal-input-icons {
     fill: var(--color-accent);
-    border-color: var(--color-accent);
 }
 
 .modal-input-wrap {
@@ -644,7 +643,6 @@ address {
 }
 
 .modal-input-icons {
-    fill: var(--color-accent);;
     position: absolute;
     left: 16px;
     top: 50%;
